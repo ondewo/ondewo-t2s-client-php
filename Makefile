@@ -44,7 +44,7 @@ export
 
 # MUST BE THE SAME AS THE API in Major and Minor Version Number
 # example: API 2.9.0 --> Client 2.9.X
-ONDEWO_T2S_VERSION=6.6.0
+ONDEWO_T2S_VERSION=6.6.1
 
 # Submodule pins. Both are checked out by `make checkout_defined_submodule_versions`, so the
 # stubs of a release are always reproducible from the two commits recorded here.
@@ -267,11 +267,12 @@ check_build: ## Fails if any .proto of the API submodule has no generated PHP co
 		|| { echo "$(RED)[ERROR]$(NC) src/ is missing - run 'make generate_ondewo_protos' first"; exit 1; }
 	@test -d ${ONDEWO_T2S_API_DIR}/${PROTOS_TARGET_SUBDIR} \
 		|| { echo "$(RED)[ERROR]$(NC) '${ONDEWO_T2S_API_DIR}/${PROTOS_TARGET_SUBDIR}' not found - run 'make update_submodules' first"; exit 1; }
-# protoc's php generator names a file after the UpperCamel form of the .proto basename
-# (ai_services.proto -> AiServices.php), so the basename is camel-cased before it is looked up.
+# protoc's php generator names a file after the UpperCamel form of the .proto basename, split on
+# '_' AND '-' (ai_services.proto -> AiServices.php, speech-to-text.proto -> SpeechToText.php), so
+# the basename is camel-cased the same way before it is looked up.
 	@find ${ONDEWO_T2S_API_DIR}/${PROTOS_TARGET_SUBDIR} -type f -name '*.proto' \
 		| while IFS= read -r proto; do \
-			camel=`basename "$$proto" .proto | awk -F'_' '{s=""; for(i=1;i<=NF;i++){s = s toupper(substr($$i,1,1)) substr($$i,2)}; print s}'`; \
+			camel=`basename "$$proto" .proto | awk -F'[_-]' '{s=""; for(i=1;i<=NF;i++){s = s toupper(substr($$i,1,1)) substr($$i,2)}; print s}'`; \
 			find src -type f -name "$$camel.php" | grep -q . \
 				|| { echo "$(RED)[ERROR]$(NC) No PHP code generated for $$proto (expected a $$camel.php)"; exit 1; }; \
 		done || exit 1
@@ -532,6 +533,12 @@ check_packagist_credentials: ## Fail unless PACKAGIST_USERNAME and PACKAGIST_API
 packagist_update: ## Ping the Packagist update API so it crawls the tags of this repository
 	@mkdir -p build
 	@echo "$(BLUE)[INFO]$(NC) Asking Packagist to crawl ${PACKAGIST_REPOSITORY_URL} ..."
+# Packagist answers 202 Accepted on success - the crawl is queued, not finished - and 200 only on
+# some paths. Both are success; the authoritative signal is status=success in the body. Demanding
+# 200 alone reported a completed publish as a credentials failure.
+# NOTE: keep comments OUT of the backslash-continued block below. A `#` line inside it is a SHELL
+# comment that swallows the rest of the joined line, so the http-code test then ran in a new shell
+# with an empty `code` and failed EVERY publish, 202 included.
 	@code=`printf 'header = "Authorization: Bearer %s:%s"\n' "$${PACKAGIST_USERNAME}" "$${PACKAGIST_API_TOKEN}" \
 		| curl --silent --show-error --location --config - \
 		--output build/packagist-update-response.json --write-out '%{http_code}' \
@@ -540,15 +547,11 @@ packagist_update: ## Ping the Packagist update API so it crawls the tags of this
 		"${PACKAGIST_UPDATE_API}"`; \
 	echo "$(BLUE)[INFO]$(NC) Packagist answered HTTP $$code"; \
 	cat build/packagist-update-response.json; echo; \
-	# Packagist answers 202 Accepted on success - the crawl is queued, not finished - and
-	# 200 only on some paths. Both are success; the authoritative signal is status=success
-	# in the body, checked below. Demanding 200 alone reported a completed publish as a
-	# credentials failure.
 	if [ "$$code" != "200" ] && [ "$$code" != "202" ]; then \
 		echo "$(RED)[ERROR]$(NC) Packagist rejected the update (HTTP $$code). 40x means the credentials are wrong or ${PACKAGIST_PACKAGE} has never been submitted - see README 'Publishing to Packagist'"; \
 		exit 1; \
-	fi
-	@grep -q '"status" *: *"success"' build/packagist-update-response.json \
+	fi; \
+	grep -q '"status" *: *"success"' build/packagist-update-response.json \
 		|| { echo "$(RED)[ERROR]$(NC) Packagist returned HTTP $$code without status=success - see the response above"; exit 1; }
 	@echo "$(GREEN)[SUCCESS]$(NC) Packagist is crawling ${PACKAGIST_REPOSITORY_URL}"
 
