@@ -2,7 +2,13 @@
   "name": "ondewo/t2s-client-php",
   "description": "ONDEWO T2S (Text-to-Speech) gRPC client for PHP, generated from the ondewo-t2s-api protocol buffer definitions",
   "type": "library",
-  "keywords": ["ondewo", "t2s", "grpc", "protobuf", "client"],
+  "keywords": [
+    "ondewo",
+    "t2s",
+    "grpc",
+    "protobuf",
+    "client"
+  ],
   "homepage": "https://github.com/ondewo/ondewo-t2s-client-php",
   "license": "Apache-2.0",
   "authors": [
@@ -26,7 +32,10 @@
     "psr/log": "To receive ClientConfig's insecure-channel warning on a PSR-3 logger instead of error_log()"
   },
   "autoload": {
-    "classmap": ["src/"],
+    "classmap": [
+      "auth/",
+      "src/"
+    ],
     "psr-4": {
       "Ondewo\\T2s\\Auth\\": "auth/"
     }
