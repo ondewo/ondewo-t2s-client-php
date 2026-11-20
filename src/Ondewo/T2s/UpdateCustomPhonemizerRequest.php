@@ -72,9 +72,9 @@ class UpdateCustomPhonemizerRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -84,7 +84,7 @@ class UpdateCustomPhonemizerRequest extends \Google\Protobuf\Internal\Message
      * The update method.
      *
      * Generated from protobuf field <code>.ondewo.t2s.UpdateCustomPhonemizerRequest.UpdateMethod update_method = 2;</code>
-     * @return int
+     * @return int one of the values in {@see \Ondewo\T2s\UpdateCustomPhonemizerRequest\UpdateMethod}
      */
     public function getUpdateMethod()
     {
@@ -95,10 +95,10 @@ class UpdateCustomPhonemizerRequest extends \Google\Protobuf\Internal\Message
      * The update method.
      *
      * Generated from protobuf field <code>.ondewo.t2s.UpdateCustomPhonemizerRequest.UpdateMethod update_method = 2;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Ondewo\T2s\UpdateCustomPhonemizerRequest\UpdateMethod}
      * @return $this
      */
-    public function setUpdateMethod($var)
+    public function setUpdateMethod(int $var)
     {
         GPBUtil::checkEnum($var, \Ondewo\T2s\UpdateCustomPhonemizerRequest\UpdateMethod::class);
         $this->update_method = $var;
@@ -124,7 +124,7 @@ class UpdateCustomPhonemizerRequest extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\Map[] $var
      * @return $this
      */
-    public function setMaps($var)
+    public function setMaps(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Ondewo\T2s\Map::class);
         $this->maps = $arr;

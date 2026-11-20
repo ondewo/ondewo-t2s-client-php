@@ -56,7 +56,7 @@ class BatchSynthesizeRequest extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\SynthesizeRequest[] $var
      * @return $this
      */
-    public function setBatchRequest($var)
+    public function setBatchRequest(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Ondewo\T2s\SynthesizeRequest::class);
         $this->batch_request = $arr;

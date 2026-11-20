@@ -56,7 +56,7 @@ class ListCustomPhonemizerResponse extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\CustomPhonemizerProto[] $var
      * @return $this
      */
-    public function setPhonemizers($var)
+    public function setPhonemizers(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Ondewo\T2s\CustomPhonemizerProto::class);
         $this->phonemizers = $arr;

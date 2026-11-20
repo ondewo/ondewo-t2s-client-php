@@ -112,9 +112,8 @@ class T2SCustomLengthScales extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setText($var)
+    public function setText(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->text = $var;
 
         return $this;
@@ -138,9 +137,8 @@ class T2SCustomLengthScales extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setEmail($var)
+    public function setEmail(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->email = $var;
 
         return $this;
@@ -164,9 +162,8 @@ class T2SCustomLengthScales extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setUrl($var)
+    public function setUrl(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->url = $var;
 
         return $this;
@@ -190,9 +187,8 @@ class T2SCustomLengthScales extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setPhone($var)
+    public function setPhone(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->phone = $var;
 
         return $this;
@@ -216,9 +212,8 @@ class T2SCustomLengthScales extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setSpell($var)
+    public function setSpell(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->spell = $var;
 
         return $this;
@@ -242,9 +237,8 @@ class T2SCustomLengthScales extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setSpellWithNames($var)
+    public function setSpellWithNames(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->spell_with_names = $var;
 
         return $this;
@@ -268,9 +262,8 @@ class T2SCustomLengthScales extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setCallsignLong($var)
+    public function setCallsignLong(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->callsign_long = $var;
 
         return $this;
@@ -294,9 +287,8 @@ class T2SCustomLengthScales extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setCallsignShort($var)
+    public function setCallsignShort(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->callsign_short = $var;
 
         return $this;

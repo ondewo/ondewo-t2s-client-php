@@ -88,9 +88,9 @@ class T2sCloudServiceElevenLabs extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLanguageCode($var)
+    public function setLanguageCode(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->language_code = $var;
 
         return $this;
@@ -114,9 +114,9 @@ class T2sCloudServiceElevenLabs extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setModelId($var)
+    public function setModelId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->model_id = $var;
 
         return $this;
@@ -140,9 +140,9 @@ class T2sCloudServiceElevenLabs extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setVoiceId($var)
+    public function setVoiceId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->voice_id = $var;
 
         return $this;
@@ -176,9 +176,8 @@ class T2sCloudServiceElevenLabs extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\VoiceSettings $var
      * @return $this
      */
-    public function setVoiceSettings($var)
+    public function setVoiceSettings(\Ondewo\T2s\VoiceSettings|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\VoiceSettings::class);
         $this->voice_settings = $var;
 
         return $this;
@@ -202,9 +201,9 @@ class T2sCloudServiceElevenLabs extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setApplyTextNormalization($var)
+    public function setApplyTextNormalization(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->apply_text_normalization = $var;
 
         return $this;

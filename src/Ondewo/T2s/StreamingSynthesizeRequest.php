@@ -68,9 +68,9 @@ class StreamingSynthesizeRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setText($var)
+    public function setText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->text = $var;
 
         return $this;
@@ -104,9 +104,8 @@ class StreamingSynthesizeRequest extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\RequestConfig $var
      * @return $this
      */
-    public function setConfig($var)
+    public function setConfig(\Ondewo\T2s\RequestConfig|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\RequestConfig::class);
         $this->config = $var;
 
         return $this;

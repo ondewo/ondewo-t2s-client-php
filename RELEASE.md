@@ -2,6 +2,15 @@
 
 *****************
 
+## Release ONDEWO T2S PHP Client 6.7.0
+
+### Improvements
+
+* Tracking API Version [6.7.0](https://github.com/ondewo/ondewo-t2s-api/releases/tag/6.7.0) ( [Documentation](https://ondewo.github.io/ondewo-t2s-api/) )
+* [[OND236-120]](https://ondewo.atlassian.net/browse/OND236-120) Generated with ondewo-proto-compiler 5.17.0 (protoc 35.1). New runtime floors: `google/protobuf` 5.35.1 (a major step from 4.33.6; php >= 8.2.0) and `grpc/grpc` 1.85.0.
+
+*****************
+
 ## Release ONDEWO T2S PHP Client 6.6.1
 
 ### Improvements

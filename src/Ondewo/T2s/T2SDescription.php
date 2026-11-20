@@ -96,9 +96,9 @@ class T2SDescription extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLanguage($var)
+    public function setLanguage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->language = $var;
 
         return $this;
@@ -122,9 +122,9 @@ class T2SDescription extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSpeakerSex($var)
+    public function setSpeakerSex(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->speaker_sex = $var;
 
         return $this;
@@ -148,9 +148,9 @@ class T2SDescription extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPipelineOwner($var)
+    public function setPipelineOwner(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->pipeline_owner = $var;
 
         return $this;
@@ -174,9 +174,9 @@ class T2SDescription extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setComments($var)
+    public function setComments(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->comments = $var;
 
         return $this;
@@ -200,9 +200,9 @@ class T2SDescription extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSpeakerName($var)
+    public function setSpeakerName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->speaker_name = $var;
 
         return $this;
@@ -226,9 +226,9 @@ class T2SDescription extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDomain($var)
+    public function setDomain(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->domain = $var;
 
         return $this;

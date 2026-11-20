@@ -56,7 +56,7 @@ class ListCustomPhonemizerRequest extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setPipelineIds($var)
+    public function setPipelineIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->pipeline_ids = $arr;

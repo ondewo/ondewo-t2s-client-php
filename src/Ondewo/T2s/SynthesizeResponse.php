@@ -113,9 +113,9 @@ class SynthesizeResponse extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAudioUuid($var)
+    public function setAudioUuid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->audio_uuid = $var;
 
         return $this;
@@ -139,9 +139,9 @@ class SynthesizeResponse extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAudio($var)
+    public function setAudio(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->audio = $var;
 
         return $this;
@@ -165,9 +165,8 @@ class SynthesizeResponse extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setGenerationTime($var)
+    public function setGenerationTime(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->generation_time = $var;
 
         return $this;
@@ -191,9 +190,8 @@ class SynthesizeResponse extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setAudioLength($var)
+    public function setAudioLength(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->audio_length = $var;
 
         return $this;
@@ -217,9 +215,9 @@ class SynthesizeResponse extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setText($var)
+    public function setText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->text = $var;
 
         return $this;
@@ -253,9 +251,8 @@ class SynthesizeResponse extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\RequestConfig $var
      * @return $this
      */
-    public function setConfig($var)
+    public function setConfig(\Ondewo\T2s\RequestConfig|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\RequestConfig::class);
         $this->config = $var;
 
         return $this;
@@ -279,9 +276,9 @@ class SynthesizeResponse extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setNormalizedText($var)
+    public function setNormalizedText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->normalized_text = $var;
 
         return $this;
@@ -305,9 +302,8 @@ class SynthesizeResponse extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setSampleRate($var)
+    public function setSampleRate(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->sample_rate = $var;
 
         return $this;

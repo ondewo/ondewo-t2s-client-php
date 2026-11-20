@@ -76,9 +76,9 @@ class Text2Mel extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->type = $var;
 
         return $this;
@@ -112,9 +112,8 @@ class Text2Mel extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\GlowTTS $var
      * @return $this
      */
-    public function setGlowTts($var)
+    public function setGlowTts(\Ondewo\T2s\GlowTTS|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\GlowTTS::class);
         $this->glow_tts = $var;
 
         return $this;
@@ -148,9 +147,8 @@ class Text2Mel extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\GlowTTSTriton $var
      * @return $this
      */
-    public function setGlowTtsTriton($var)
+    public function setGlowTtsTriton(\Ondewo\T2s\GlowTTSTriton|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\GlowTTSTriton::class);
         $this->glow_tts_triton = $var;
 
         return $this;

@@ -90,9 +90,8 @@ class T2sCloudProviderConfigElevenLabs extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setStability($var)
+    public function setStability(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->stability = $var;
 
         return $this;
@@ -118,9 +117,8 @@ class T2sCloudProviderConfigElevenLabs extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setSimilarityBoost($var)
+    public function setSimilarityBoost(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->similarity_boost = $var;
 
         return $this;
@@ -144,9 +142,8 @@ class T2sCloudProviderConfigElevenLabs extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setStyle($var)
+    public function setStyle(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->style = $var;
 
         return $this;
@@ -170,9 +167,8 @@ class T2sCloudProviderConfigElevenLabs extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setUseSpeakerBoost($var)
+    public function setUseSpeakerBoost(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->use_speaker_boost = $var;
 
         return $this;
@@ -196,9 +192,9 @@ class T2sCloudProviderConfigElevenLabs extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setApplyTextNormalization($var)
+    public function setApplyTextNormalization(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->apply_text_normalization = $var;
 
         return $this;

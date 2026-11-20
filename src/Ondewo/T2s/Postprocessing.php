@@ -88,9 +88,8 @@ class Postprocessing extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setSilenceSecs($var)
+    public function setSilenceSecs(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->silence_secs = $var;
 
         return $this;
@@ -114,7 +113,7 @@ class Postprocessing extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setPipeline($var)
+    public function setPipeline(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->pipeline = $arr;
@@ -150,9 +149,8 @@ class Postprocessing extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\Logmnse $var
      * @return $this
      */
-    public function setLogmmse($var)
+    public function setLogmmse(\Ondewo\T2s\Logmnse|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\Logmnse::class);
         $this->logmmse = $var;
 
         return $this;
@@ -186,9 +184,8 @@ class Postprocessing extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\Wiener $var
      * @return $this
      */
-    public function setWiener($var)
+    public function setWiener(\Ondewo\T2s\Wiener|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\Wiener::class);
         $this->wiener = $var;
 
         return $this;
@@ -222,9 +219,8 @@ class Postprocessing extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\Apodization $var
      * @return $this
      */
-    public function setApodization($var)
+    public function setApodization(\Ondewo\T2s\Apodization|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\Apodization::class);
         $this->apodization = $var;
 
         return $this;

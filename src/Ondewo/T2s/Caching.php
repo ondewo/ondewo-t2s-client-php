@@ -96,9 +96,8 @@ class Caching extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setActive($var)
+    public function setActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->active = $var;
 
         return $this;
@@ -122,7 +121,7 @@ class Caching extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMemoryCacheMaxSize($var)
+    public function setMemoryCacheMaxSize(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->memory_cache_max_size = $var;
@@ -148,7 +147,7 @@ class Caching extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSamplingRate($var)
+    public function setSamplingRate(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->sampling_rate = $var;
@@ -174,9 +173,8 @@ class Caching extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLoadCache($var)
+    public function setLoadCache(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->load_cache = $var;
 
         return $this;
@@ -200,9 +198,8 @@ class Caching extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSaveCache($var)
+    public function setSaveCache(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->save_cache = $var;
 
         return $this;
@@ -226,9 +223,9 @@ class Caching extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCacheSaveDir($var)
+    public function setCacheSaveDir(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->cache_save_dir = $var;
 
         return $this;

@@ -120,7 +120,7 @@ class GlowTTSTriton extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setBatchSize($var)
+    public function setBatchSize(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->batch_size = $var;
@@ -146,9 +146,8 @@ class GlowTTSTriton extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLengthScale($var)
+    public function setLengthScale(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->length_scale = $var;
 
         return $this;
@@ -172,9 +171,8 @@ class GlowTTSTriton extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setNoiseScale($var)
+    public function setNoiseScale(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->noise_scale = $var;
 
         return $this;
@@ -198,7 +196,7 @@ class GlowTTSTriton extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setCleaners($var)
+    public function setCleaners(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->cleaners = $arr;
@@ -224,7 +222,7 @@ class GlowTTSTriton extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMaxTextLength($var)
+    public function setMaxTextLength(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->max_text_length = $var;
@@ -250,9 +248,9 @@ class GlowTTSTriton extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setParamConfigPath($var)
+    public function setParamConfigPath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->param_config_path = $var;
 
         return $this;
@@ -276,9 +274,9 @@ class GlowTTSTriton extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTritonModelName($var)
+    public function setTritonModelName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->triton_model_name = $var;
 
         return $this;
@@ -302,9 +300,9 @@ class GlowTTSTriton extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTritonServerHost($var)
+    public function setTritonServerHost(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->triton_server_host = $var;
 
         return $this;
@@ -328,7 +326,7 @@ class GlowTTSTriton extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTritonServerPort($var)
+    public function setTritonServerPort(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->triton_server_port = $var;

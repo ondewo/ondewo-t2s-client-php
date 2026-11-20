@@ -82,9 +82,8 @@ class T2sCloudProviderConfig extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\T2sCloudProviderConfigElevenLabs $var
      * @return $this
      */
-    public function setT2SCloudProviderConfigElevenlabs($var)
+    public function setT2SCloudProviderConfigElevenlabs(\Ondewo\T2s\T2sCloudProviderConfigElevenLabs|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\T2sCloudProviderConfigElevenLabs::class);
         $this->t2s_cloud_provider_config_elevenlabs = $var;
 
         return $this;
@@ -118,9 +117,8 @@ class T2sCloudProviderConfig extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\T2sCloudProviderConfigGoogle $var
      * @return $this
      */
-    public function setT2SCloudProviderConfigGoogle($var)
+    public function setT2SCloudProviderConfigGoogle(\Ondewo\T2s\T2sCloudProviderConfigGoogle|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\T2sCloudProviderConfigGoogle::class);
         $this->t2s_cloud_provider_config_google = $var;
 
         return $this;
@@ -154,9 +152,8 @@ class T2sCloudProviderConfig extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\T2sCloudProviderConfigMicrosoft $var
      * @return $this
      */
-    public function setT2SCloudProviderConfigMicrosoft($var)
+    public function setT2SCloudProviderConfigMicrosoft(\Ondewo\T2s\T2sCloudProviderConfigMicrosoft|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\T2sCloudProviderConfigMicrosoft::class);
         $this->t2s_cloud_provider_config_microsoft = $var;
 
         return $this;

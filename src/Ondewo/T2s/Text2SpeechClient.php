@@ -38,7 +38,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\SynthesizeRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\SynthesizeResponse>
      */
     public function Synthesize(\Ondewo\T2s\SynthesizeRequest $argument,
       $metadata = [], $options = []) {
@@ -54,7 +54,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\BatchSynthesizeRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\BatchSynthesizeResponse>
      */
     public function BatchSynthesize(\Ondewo\T2s\BatchSynthesizeRequest $argument,
       $metadata = [], $options = []) {
@@ -81,7 +81,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\NormalizeTextRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\NormalizeTextResponse>
      */
     public function NormalizeText(\Ondewo\T2s\NormalizeTextRequest $argument,
       $metadata = [], $options = []) {
@@ -96,7 +96,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\T2sPipelineId $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\Text2SpeechConfig>
      */
     public function GetT2sPipeline(\Ondewo\T2s\T2sPipelineId $argument,
       $metadata = [], $options = []) {
@@ -111,7 +111,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\Text2SpeechConfig $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\T2sPipelineId>
      */
     public function CreateT2sPipeline(\Ondewo\T2s\Text2SpeechConfig $argument,
       $metadata = [], $options = []) {
@@ -126,7 +126,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\T2sPipelineId $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteT2sPipeline(\Ondewo\T2s\T2sPipelineId $argument,
       $metadata = [], $options = []) {
@@ -141,7 +141,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\Text2SpeechConfig $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function UpdateT2sPipeline(\Ondewo\T2s\Text2SpeechConfig $argument,
       $metadata = [], $options = []) {
@@ -156,7 +156,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\ListT2sPipelinesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\ListT2sPipelinesResponse>
      */
     public function ListT2sPipelines(\Ondewo\T2s\ListT2sPipelinesRequest $argument,
       $metadata = [], $options = []) {
@@ -171,7 +171,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\ListT2sLanguagesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\ListT2sLanguagesResponse>
      */
     public function ListT2sLanguages(\Ondewo\T2s\ListT2sLanguagesRequest $argument,
       $metadata = [], $options = []) {
@@ -186,7 +186,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\ListT2sDomainsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\ListT2sDomainsResponse>
      */
     public function ListT2sDomains(\Ondewo\T2s\ListT2sDomainsRequest $argument,
       $metadata = [], $options = []) {
@@ -201,7 +201,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\ListT2sNormalizationPipelinesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\ListT2sNormalizationPipelinesResponse>
      */
     public function ListT2sNormalizationPipelines(\Ondewo\T2s\ListT2sNormalizationPipelinesRequest $argument,
       $metadata = [], $options = []) {
@@ -216,7 +216,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Google\Protobuf\GPBEmpty $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\T2SGetServiceInfoResponse>
      */
     public function GetServiceInfo(\Google\Protobuf\GPBEmpty $argument,
       $metadata = [], $options = []) {
@@ -231,7 +231,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\PhonemizerId $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\CustomPhonemizerProto>
      */
     public function GetCustomPhonemizer(\Ondewo\T2s\PhonemizerId $argument,
       $metadata = [], $options = []) {
@@ -247,7 +247,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\CreateCustomPhonemizerRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\PhonemizerId>
      */
     public function CreateCustomPhonemizer(\Ondewo\T2s\CreateCustomPhonemizerRequest $argument,
       $metadata = [], $options = []) {
@@ -263,7 +263,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\PhonemizerId $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteCustomPhonemizer(\Ondewo\T2s\PhonemizerId $argument,
       $metadata = [], $options = []) {
@@ -278,7 +278,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\UpdateCustomPhonemizerRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\CustomPhonemizerProto>
      */
     public function UpdateCustomPhonemizer(\Ondewo\T2s\UpdateCustomPhonemizerRequest $argument,
       $metadata = [], $options = []) {
@@ -293,7 +293,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\ListCustomPhonemizerRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\T2s\ListCustomPhonemizerResponse>
      */
     public function ListCustomPhonemizer(\Ondewo\T2s\ListCustomPhonemizerRequest $argument,
       $metadata = [], $options = []) {
@@ -309,7 +309,7 @@ class Text2SpeechClient extends \Grpc\BaseStub {
      * @param \Ondewo\T2s\VoiceCloningRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function VoiceCloning(\Ondewo\T2s\VoiceCloningRequest $argument,
       $metadata = [], $options = []) {

@@ -56,9 +56,9 @@ class NormalizeTextResponse extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setNormalizedText($var)
+    public function setNormalizedText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->normalized_text = $var;
 
         return $this;

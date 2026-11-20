@@ -56,7 +56,7 @@ class BatchSynthesizeResponse extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\SynthesizeResponse[] $var
      * @return $this
      */
-    public function setBatchResponse($var)
+    public function setBatchResponse(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Ondewo\T2s\SynthesizeResponse::class);
         $this->batch_response = $arr;

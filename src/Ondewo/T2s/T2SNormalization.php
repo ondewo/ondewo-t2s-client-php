@@ -112,9 +112,9 @@ class T2SNormalization extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLanguage($var)
+    public function setLanguage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->language = $var;
 
         return $this;
@@ -138,7 +138,7 @@ class T2SNormalization extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setPipeline($var)
+    public function setPipeline(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->pipeline = $arr;
@@ -164,9 +164,9 @@ class T2SNormalization extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCustomPhonemizerId($var)
+    public function setCustomPhonemizerId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->custom_phonemizer_id = $var;
 
         return $this;
@@ -200,9 +200,8 @@ class T2SNormalization extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\T2SCustomLengthScales $var
      * @return $this
      */
-    public function setCustomLengthScales($var)
+    public function setCustomLengthScales(\Ondewo\T2s\T2SCustomLengthScales|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\T2SCustomLengthScales::class);
         $this->custom_length_scales = $var;
 
         return $this;
@@ -226,9 +225,9 @@ class T2SNormalization extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setArpabetMapping($var)
+    public function setArpabetMapping(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->arpabet_mapping = $var;
 
         return $this;
@@ -252,9 +251,9 @@ class T2SNormalization extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setNumericMapping($var)
+    public function setNumericMapping(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->numeric_mapping = $var;
 
         return $this;
@@ -278,9 +277,9 @@ class T2SNormalization extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCallsignsMapping($var)
+    public function setCallsignsMapping(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->callsigns_mapping = $var;
 
         return $this;
@@ -304,9 +303,9 @@ class T2SNormalization extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPhonemeCorrectionMapping($var)
+    public function setPhonemeCorrectionMapping(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->phoneme_correction_mapping = $var;
 
         return $this;

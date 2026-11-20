@@ -72,7 +72,7 @@ class Logmnse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setInitialNoise($var)
+    public function setInitialNoise(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->initial_noise = $var;
@@ -98,7 +98,7 @@ class Logmnse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setWindowSize($var)
+    public function setWindowSize(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->window_size = $var;
@@ -124,9 +124,8 @@ class Logmnse extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setNoiseThreshold($var)
+    public function setNoiseThreshold(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->noise_threshold = $var;
 
         return $this;

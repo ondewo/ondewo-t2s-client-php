@@ -104,7 +104,7 @@ class GlowTTS extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setBatchSize($var)
+    public function setBatchSize(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->batch_size = $var;
@@ -130,9 +130,8 @@ class GlowTTS extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setUseGpu($var)
+    public function setUseGpu(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->use_gpu = $var;
 
         return $this;
@@ -156,9 +155,8 @@ class GlowTTS extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLengthScale($var)
+    public function setLengthScale(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->length_scale = $var;
 
         return $this;
@@ -182,9 +180,8 @@ class GlowTTS extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setNoiseScale($var)
+    public function setNoiseScale(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->noise_scale = $var;
 
         return $this;
@@ -208,9 +205,9 @@ class GlowTTS extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPath($var)
+    public function setPath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->path = $var;
 
         return $this;
@@ -234,7 +231,7 @@ class GlowTTS extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setCleaners($var)
+    public function setCleaners(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->cleaners = $arr;
@@ -260,9 +257,9 @@ class GlowTTS extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setParamConfigPath($var)
+    public function setParamConfigPath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->param_config_path = $var;
 
         return $this;

@@ -80,9 +80,8 @@ class HiFiGan extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setUseGpu($var)
+    public function setUseGpu(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->use_gpu = $var;
 
         return $this;
@@ -106,7 +105,7 @@ class HiFiGan extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setBatchSize($var)
+    public function setBatchSize(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->batch_size = $var;
@@ -132,9 +131,9 @@ class HiFiGan extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setConfigPath($var)
+    public function setConfigPath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->config_path = $var;
 
         return $this;
@@ -158,9 +157,9 @@ class HiFiGan extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setModelPath($var)
+    public function setModelPath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->model_path = $var;
 
         return $this;

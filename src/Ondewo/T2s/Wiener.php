@@ -88,7 +88,7 @@ class Wiener extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setFrameLen($var)
+    public function setFrameLen(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->frame_len = $var;
@@ -114,7 +114,7 @@ class Wiener extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setLpcOrder($var)
+    public function setLpcOrder(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->lpc_order = $var;
@@ -140,7 +140,7 @@ class Wiener extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setIterations($var)
+    public function setIterations(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->iterations = $var;
@@ -166,9 +166,8 @@ class Wiener extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setAlpha($var)
+    public function setAlpha(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->alpha = $var;
 
         return $this;
@@ -192,9 +191,8 @@ class Wiener extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setThresh($var)
+    public function setThresh(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->thresh = $var;
 
         return $this;

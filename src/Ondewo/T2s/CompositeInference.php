@@ -74,9 +74,8 @@ class CompositeInference extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\Text2Mel $var
      * @return $this
      */
-    public function setText2Mel($var)
+    public function setText2Mel(\Ondewo\T2s\Text2Mel|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\Text2Mel::class);
         $this->text2mel = $var;
 
         return $this;
@@ -110,9 +109,8 @@ class CompositeInference extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\Mel2Audio $var
      * @return $this
      */
-    public function setMel2Audio($var)
+    public function setMel2Audio(\Ondewo\T2s\Mel2Audio|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\Mel2Audio::class);
         $this->mel2audio = $var;
 
         return $this;

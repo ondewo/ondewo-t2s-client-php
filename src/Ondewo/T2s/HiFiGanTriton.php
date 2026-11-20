@@ -80,9 +80,9 @@ class HiFiGanTriton extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setConfigPath($var)
+    public function setConfigPath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->config_path = $var;
 
         return $this;
@@ -106,9 +106,9 @@ class HiFiGanTriton extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTritonModelName($var)
+    public function setTritonModelName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->triton_model_name = $var;
 
         return $this;
@@ -132,9 +132,9 @@ class HiFiGanTriton extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTritonServerHost($var)
+    public function setTritonServerHost(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->triton_server_host = $var;
 
         return $this;
@@ -158,7 +158,7 @@ class HiFiGanTriton extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTritonServerPort($var)
+    public function setTritonServerPort(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->triton_server_port = $var;

@@ -56,9 +56,8 @@ class Apodization extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setApodizationSecs($var)
+    public function setApodizationSecs(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->apodization_secs = $var;
 
         return $this;

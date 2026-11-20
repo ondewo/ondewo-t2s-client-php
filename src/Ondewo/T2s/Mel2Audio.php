@@ -84,9 +84,9 @@ class Mel2Audio extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->type = $var;
 
         return $this;
@@ -120,9 +120,8 @@ class Mel2Audio extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\MbMelganTriton $var
      * @return $this
      */
-    public function setMbMelganTriton($var)
+    public function setMbMelganTriton(\Ondewo\T2s\MbMelganTriton|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\MbMelganTriton::class);
         $this->mb_melgan_triton = $var;
 
         return $this;
@@ -156,9 +155,8 @@ class Mel2Audio extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\HiFiGan $var
      * @return $this
      */
-    public function setHifiGan($var)
+    public function setHifiGan(\Ondewo\T2s\HiFiGan|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\HiFiGan::class);
         $this->hifi_gan = $var;
 
         return $this;
@@ -192,9 +190,8 @@ class Mel2Audio extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\HiFiGanTriton $var
      * @return $this
      */
-    public function setHifiGanTriton($var)
+    public function setHifiGanTriton(\Ondewo\T2s\HiFiGanTriton|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\HiFiGanTriton::class);
         $this->hifi_gan_triton = $var;
 
         return $this;

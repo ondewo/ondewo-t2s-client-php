@@ -72,9 +72,8 @@ class T2sCloudProviderConfigGoogle extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setSpeakingRate($var)
+    public function setSpeakingRate(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->speaking_rate = $var;
 
         return $this;
@@ -98,9 +97,8 @@ class T2sCloudProviderConfigGoogle extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setVolumeGainDb($var)
+    public function setVolumeGainDb(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->volume_gain_db = $var;
 
         return $this;
@@ -124,9 +122,8 @@ class T2sCloudProviderConfigGoogle extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setPitch($var)
+    public function setPitch(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->pitch = $var;
 
         return $this;

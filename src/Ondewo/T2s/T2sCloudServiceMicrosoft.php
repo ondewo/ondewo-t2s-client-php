@@ -64,9 +64,9 @@ class T2sCloudServiceMicrosoft extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setVoiceId($var)
+    public function setVoiceId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->voice_id = $var;
 
         return $this;
@@ -90,9 +90,8 @@ class T2sCloudServiceMicrosoft extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setUseDefaultSpeaker($var)
+    public function setUseDefaultSpeaker(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->use_default_speaker = $var;
 
         return $this;

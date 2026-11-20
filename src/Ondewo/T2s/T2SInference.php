@@ -88,9 +88,9 @@ class T2SInference extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->type = $var;
 
         return $this;
@@ -124,9 +124,8 @@ class T2SInference extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\CompositeInference $var
      * @return $this
      */
-    public function setCompositeInference($var)
+    public function setCompositeInference(\Ondewo\T2s\CompositeInference|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\CompositeInference::class);
         $this->composite_inference = $var;
 
         return $this;
@@ -160,9 +159,8 @@ class T2SInference extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\SingleInference $var
      * @return $this
      */
-    public function setSingleInference($var)
+    public function setSingleInference(\Ondewo\T2s\SingleInference|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\SingleInference::class);
         $this->single_inference = $var;
 
         return $this;
@@ -196,9 +194,8 @@ class T2SInference extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\Caching $var
      * @return $this
      */
-    public function setCaching($var)
+    public function setCaching(\Ondewo\T2s\Caching|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\Caching::class);
         $this->caching = $var;
 
         return $this;

@@ -198,9 +198,9 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setT2SPipelineId($var)
+    public function setT2SPipelineId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->t2s_pipeline_id = $var;
 
         return $this;
@@ -235,9 +235,8 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLengthScale($var)
+    public function setLengthScale(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->writeOneof(2, $var);
 
         return $this;
@@ -270,9 +269,8 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setNoiseScale($var)
+    public function setNoiseScale(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->writeOneof(3, $var);
 
         return $this;
@@ -303,7 +301,7 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSampleRate($var)
+    public function setSampleRate(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->writeOneof(4, $var);
@@ -316,7 +314,7 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * The default value is PCM_16.
      *
      * Generated from protobuf field <code>.ondewo.t2s.Pcm pcm = 5;</code>
-     * @return int
+     * @return int one of the values in {@see \Ondewo\T2s\Pcm}
      */
     public function getPcm()
     {
@@ -333,10 +331,10 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * The default value is PCM_16.
      *
      * Generated from protobuf field <code>.ondewo.t2s.Pcm pcm = 5;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Ondewo\T2s\Pcm}
      * @return $this
      */
-    public function setPcm($var)
+    public function setPcm(int $var)
     {
         GPBUtil::checkEnum($var, \Ondewo\T2s\Pcm::class);
         $this->writeOneof(5, $var);
@@ -349,7 +347,7 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * The default value is wav.
      *
      * Generated from protobuf field <code>.ondewo.t2s.AudioFormat audio_format = 6;</code>
-     * @return int
+     * @return int one of the values in {@see \Ondewo\T2s\AudioFormat}
      */
     public function getAudioFormat()
     {
@@ -366,10 +364,10 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * The default value is wav.
      *
      * Generated from protobuf field <code>.ondewo.t2s.AudioFormat audio_format = 6;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Ondewo\T2s\AudioFormat}
      * @return $this
      */
-    public function setAudioFormat($var)
+    public function setAudioFormat(int $var)
     {
         GPBUtil::checkEnum($var, \Ondewo\T2s\AudioFormat::class);
         $this->writeOneof(6, $var);
@@ -402,9 +400,8 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setUseCache($var)
+    public function setUseCache(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->writeOneof(7, $var);
 
         return $this;
@@ -500,9 +497,8 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Struct $var
      * @return $this
      */
-    public function setT2SServiceConfig($var)
+    public function setT2SServiceConfig(\Google\Protobuf\Struct|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Struct::class);
         $this->t2s_service_config = $var;
 
         return $this;
@@ -538,9 +534,8 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\T2sCloudProviderConfig $var
      * @return $this
      */
-    public function setT2SCloudProviderConfig($var)
+    public function setT2SCloudProviderConfig(\Ondewo\T2s\T2sCloudProviderConfig|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\T2sCloudProviderConfig::class);
         $this->t2s_cloud_provider_config = $var;
 
         return $this;
@@ -573,9 +568,8 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\T2SNormalization $var
      * @return $this
      */
-    public function setT2SNormalization($var)
+    public function setT2SNormalization(\Ondewo\T2s\T2SNormalization|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\T2SNormalization::class);
         $this->writeOneof(11, $var);
 
         return $this;
@@ -609,9 +603,8 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Struct $var
      * @return $this
      */
-    public function setWordToPhonemeMapping($var)
+    public function setWordToPhonemeMapping(\Google\Protobuf\Struct|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Struct::class);
         $this->word_to_phoneme_mapping = $var;
 
         return $this;
@@ -659,9 +652,9 @@ class RequestConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setInstruction($var)
+    public function setInstruction(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->instruction = $var;
 
         return $this;

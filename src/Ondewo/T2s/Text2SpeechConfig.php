@@ -96,9 +96,9 @@ class Text2SpeechConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -132,9 +132,8 @@ class Text2SpeechConfig extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\T2SDescription $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(\Ondewo\T2s\T2SDescription|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\T2SDescription::class);
         $this->description = $var;
 
         return $this;
@@ -158,9 +157,8 @@ class Text2SpeechConfig extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setActive($var)
+    public function setActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->active = $var;
 
         return $this;
@@ -194,9 +192,8 @@ class Text2SpeechConfig extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\T2SInference $var
      * @return $this
      */
-    public function setInference($var)
+    public function setInference(\Ondewo\T2s\T2SInference|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\T2SInference::class);
         $this->inference = $var;
 
         return $this;
@@ -230,9 +227,8 @@ class Text2SpeechConfig extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\T2SNormalization $var
      * @return $this
      */
-    public function setNormalization($var)
+    public function setNormalization(\Ondewo\T2s\T2SNormalization|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\T2SNormalization::class);
         $this->normalization = $var;
 
         return $this;
@@ -266,9 +262,8 @@ class Text2SpeechConfig extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\Postprocessing $var
      * @return $this
      */
-    public function setPostprocessing($var)
+    public function setPostprocessing(\Ondewo\T2s\Postprocessing|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\Postprocessing::class);
         $this->postprocessing = $var;
 
         return $this;

@@ -96,9 +96,9 @@ class Qwen3TtsCustomVoice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setVoiceId($var)
+    public function setVoiceId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->voice_id = $var;
 
         return $this;
@@ -122,9 +122,9 @@ class Qwen3TtsCustomVoice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setModelName($var)
+    public function setModelName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->model_name = $var;
 
         return $this;
@@ -148,9 +148,9 @@ class Qwen3TtsCustomVoice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLanguage($var)
+    public function setLanguage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->language = $var;
 
         return $this;
@@ -174,9 +174,9 @@ class Qwen3TtsCustomVoice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setQwen3TtsServerHost($var)
+    public function setQwen3TtsServerHost(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->qwen3_tts_server_host = $var;
 
         return $this;
@@ -200,7 +200,7 @@ class Qwen3TtsCustomVoice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setQwen3TtsServerPort($var)
+    public function setQwen3TtsServerPort(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->qwen3_tts_server_port = $var;
@@ -236,9 +236,8 @@ class Qwen3TtsCustomVoice extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Struct $var
      * @return $this
      */
-    public function setQwen3TtsServerHeader($var)
+    public function setQwen3TtsServerHeader(\Google\Protobuf\Struct|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Struct::class);
         $this->qwen3_tts_server_header = $var;
 
         return $this;

@@ -90,9 +90,9 @@ class VoiceCloningRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSampleAudio($var)
+    public function setSampleAudio(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->sample_audio = $var;
 
         return $this;
@@ -116,9 +116,9 @@ class VoiceCloningRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTranscription($var)
+    public function setTranscription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->transcription = $var;
 
         return $this;
@@ -142,9 +142,9 @@ class VoiceCloningRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSpeakerName($var)
+    public function setSpeakerName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->speaker_name = $var;
 
         return $this;
@@ -168,9 +168,9 @@ class VoiceCloningRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSpeakerLanguage($var)
+    public function setSpeakerLanguage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->speaker_language = $var;
 
         return $this;
@@ -194,9 +194,9 @@ class VoiceCloningRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setModelName($var)
+    public function setModelName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->model_name = $var;
 
         return $this;

@@ -56,9 +56,8 @@ class T2sCloudProviderConfigMicrosoft extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setUseDefaultSpeaker($var)
+    public function setUseDefaultSpeaker(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->use_default_speaker = $var;
 
         return $this;

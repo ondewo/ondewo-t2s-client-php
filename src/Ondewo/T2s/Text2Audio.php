@@ -132,9 +132,9 @@ class Text2Audio extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->type = $var;
 
         return $this;
@@ -168,9 +168,8 @@ class Text2Audio extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\Vits $var
      * @return $this
      */
-    public function setVits($var)
+    public function setVits(\Ondewo\T2s\Vits|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\Vits::class);
         $this->vits = $var;
 
         return $this;
@@ -204,9 +203,8 @@ class Text2Audio extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\VitsTriton $var
      * @return $this
      */
-    public function setVitsTriton($var)
+    public function setVitsTriton(\Ondewo\T2s\VitsTriton|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\VitsTriton::class);
         $this->vits_triton = $var;
 
         return $this;
@@ -240,9 +238,8 @@ class Text2Audio extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\T2sCloudServiceElevenLabs $var
      * @return $this
      */
-    public function setT2SCloudServiceElevenlabs($var)
+    public function setT2SCloudServiceElevenlabs(\Ondewo\T2s\T2sCloudServiceElevenLabs|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\T2sCloudServiceElevenLabs::class);
         $this->t2s_cloud_service_elevenlabs = $var;
 
         return $this;
@@ -276,9 +273,8 @@ class Text2Audio extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\T2sCloudServiceAmazon $var
      * @return $this
      */
-    public function setT2SCloudServiceAmazon($var)
+    public function setT2SCloudServiceAmazon(\Ondewo\T2s\T2sCloudServiceAmazon|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\T2sCloudServiceAmazon::class);
         $this->t2s_cloud_service_amazon = $var;
 
         return $this;
@@ -312,9 +308,8 @@ class Text2Audio extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\T2sCloudServiceGoogle $var
      * @return $this
      */
-    public function setT2SCloudServiceGoogle($var)
+    public function setT2SCloudServiceGoogle(\Ondewo\T2s\T2sCloudServiceGoogle|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\T2sCloudServiceGoogle::class);
         $this->t2s_cloud_service_google = $var;
 
         return $this;
@@ -348,9 +343,8 @@ class Text2Audio extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\T2sCloudServiceMicrosoft $var
      * @return $this
      */
-    public function setT2SCloudServiceMicrosoft($var)
+    public function setT2SCloudServiceMicrosoft(\Ondewo\T2s\T2sCloudServiceMicrosoft|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\T2sCloudServiceMicrosoft::class);
         $this->t2s_cloud_service_microsoft = $var;
 
         return $this;
@@ -384,9 +378,8 @@ class Text2Audio extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\Qwen3TtsCustomVoice $var
      * @return $this
      */
-    public function setQwen3TtsCustomVoice($var)
+    public function setQwen3TtsCustomVoice(\Ondewo\T2s\Qwen3TtsCustomVoice|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\Qwen3TtsCustomVoice::class);
         $this->qwen3_tts_custom_voice = $var;
 
         return $this;
@@ -420,9 +413,8 @@ class Text2Audio extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\Qwen3TtsBase $var
      * @return $this
      */
-    public function setQwen3TtsBase($var)
+    public function setQwen3TtsBase(\Ondewo\T2s\Qwen3TtsBase|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\Qwen3TtsBase::class);
         $this->qwen3_tts_base = $var;
 
         return $this;

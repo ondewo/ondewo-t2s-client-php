@@ -88,9 +88,9 @@ class T2sCloudServiceGoogle extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setVoiceId($var)
+    public function setVoiceId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->voice_id = $var;
 
         return $this;
@@ -114,9 +114,8 @@ class T2sCloudServiceGoogle extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setSpeakingRate($var)
+    public function setSpeakingRate(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->speaking_rate = $var;
 
         return $this;
@@ -140,9 +139,8 @@ class T2sCloudServiceGoogle extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setVolumeGainDb($var)
+    public function setVolumeGainDb(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->volume_gain_db = $var;
 
         return $this;
@@ -166,9 +164,8 @@ class T2sCloudServiceGoogle extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setPitch($var)
+    public function setPitch(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->pitch = $var;
 
         return $this;
@@ -192,9 +189,9 @@ class T2sCloudServiceGoogle extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSpeakerLanguage($var)
+    public function setSpeakerLanguage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->speaker_language = $var;
 
         return $this;

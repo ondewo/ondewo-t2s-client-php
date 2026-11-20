@@ -64,9 +64,9 @@ class CreateCustomPhonemizerRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPrefix($var)
+    public function setPrefix(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->prefix = $var;
 
         return $this;
@@ -90,7 +90,7 @@ class CreateCustomPhonemizerRequest extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\Map[] $var
      * @return $this
      */
-    public function setMaps($var)
+    public function setMaps(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Ondewo\T2s\Map::class);
         $this->maps = $arr;

@@ -66,9 +66,8 @@ class SingleInference extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\T2s\Text2Audio $var
      * @return $this
      */
-    public function setText2Audio($var)
+    public function setText2Audio(\Ondewo\T2s\Text2Audio|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\T2s\Text2Audio::class);
         $this->text2audio = $var;
 
         return $this;

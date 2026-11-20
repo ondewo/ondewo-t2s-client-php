@@ -64,9 +64,9 @@ class Map extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setWord($var)
+    public function setWord(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->word = $var;
 
         return $this;
@@ -90,9 +90,9 @@ class Map extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPhonemeGroups($var)
+    public function setPhonemeGroups(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->phoneme_groups = $var;
 
         return $this;
